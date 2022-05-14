@@ -12,7 +12,7 @@ export const fetchMessage = createAsyncThunk(
 export const greetingSlice = createSlice({
   name: 'greeting',
   initialState: {
-    message: 'This is where messages go',
+    message: 'Please refresh page to see my season greetings to you!',
   },
   reducers: {
     getMessage: (state) => {

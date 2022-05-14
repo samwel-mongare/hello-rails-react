@@ -1,14 +1,18 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch  } from 'react-redux';
+import { useEffect } from 'react';
 import { fetchMessage } from '../redux/greeting';
 const Greeting = () => {
   const { message } = useSelector((state) => state.greetings);
  const dispatch = useDispatch();
+
+ useEffect(() => {
+    dispatch(fetchMessage());
+  }, []);
+
   return (
     <React.Fragment>
       <p>{message}</p>
-        <button onClick={() => dispatch(fetchMessage())}>Get New Message</button>
     </React.Fragment>
   );
 };
