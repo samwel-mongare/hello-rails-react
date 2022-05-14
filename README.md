@@ -76,7 +76,7 @@ rails db:test:prepare
 ## API Manipulation and Endpoints
 
 ```Load greetings
- /v1/greetings
+ api/v1/greetings
 ```
 
 ## Author
