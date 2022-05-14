@@ -12,7 +12,7 @@ const Greeting = () => {
 
   return (
     <React.Fragment>
-      <p>{message}</p>
+      <p class="w-screen h-screen text-center mt-72">{message}</p>
     </React.Fragment>
   );
 };
